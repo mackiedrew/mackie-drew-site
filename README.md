@@ -3,7 +3,6 @@ My personal portfolio site built in React.
 
 Should be located at http://mackiedrew.com/
 
-
 # Technologies
 
 1. React
@@ -12,9 +11,12 @@ Should be located at http://mackiedrew.com/
 4. SASS
 5. Jest
 6. Enzyme
-7. EsLint
+7. EsLintpre
+8. GitHub Pages
+9. Bootstrap 4
 
 # Not Yet Added
 
-3. GH Pages
-4. Bootstrap 4
+2. ReactRouter
+3. React Beautify
+4. Enironmental Builds W/ Webpack

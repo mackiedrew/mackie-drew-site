@@ -14,9 +14,3 @@ Should be located at http://mackiedrew.com/
 7. EsLintpre
 8. GitHub Pages
 9. Bootstrap 4
-
-# Not Yet Added
-
-2. ReactRouter
-3. React Beautify
-4. Enironmental Builds W/ Webpack

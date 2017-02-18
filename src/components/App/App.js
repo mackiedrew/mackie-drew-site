@@ -1,5 +1,5 @@
-import React from 'react'
-import styles from './App.scss'
+import React from 'react' // eslint-disable-line no-unused-vars
+import './App.scss'
 
 const App = () => (
   <div>

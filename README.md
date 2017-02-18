@@ -12,10 +12,9 @@ Should be located at http://mackiedrew.com/
 4. SASS
 5. Jest
 6. Enzyme
-
+7. EsLint
 
 # Not Yet Added
 
-2. EsLint
 3. GH Pages
 4. Bootstrap 4

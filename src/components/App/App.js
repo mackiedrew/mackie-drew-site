@@ -6,9 +6,7 @@ import Content from '../Content/Content'
 
 const App = () =>
   <div className="app">
-    <NavBar 
-      logoSize={50}
-    />
+    <NavBar />
     <Content />
   </div>
 

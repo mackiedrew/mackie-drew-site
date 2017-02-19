@@ -3,3 +3,9 @@
 .content {
   background-color: $primary-color-light;
 }
+
+.tile {
+  background: linear-gradient(0deg, red, blue);
+  height: 400px;
+  border-radius: 4px;
+}

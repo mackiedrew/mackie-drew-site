@@ -1,13 +1,17 @@
 import React from 'react' // eslint-disable-line no-unused-vars
 import './Content.scss'
 
-const NavBar = () =>
+const Content = () =>
   <div className="container content">
     <div className="row">
-      <div className="col">
-        Content
-      </div>
+      {/* Porfolio */}
+    </div>
+    <div className="row">
+      {/* Timeline */}
+    </div>
+    <div className="row">
+      {/* Timeline */}
     </div>
   </div>
 
-export default NavBar
+export default Content

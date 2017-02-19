@@ -2,8 +2,9 @@ import React from 'react' // eslint-disable-line no-unused-vars
 import './NavBar.scss'
 import Logo from '../../images/logo.svg'
 
-const NavBar = (props) =>
-  <nav className="navbar navbar-toggleable-md navbar-inverse bg-faded">
+const NavBar = () =>
+  <div className="navbar-wrap container-fluid">
+  <nav className="container navbar navbar-toggleable-md navbar-inverse bg-faded">
     
     <button
       className="navbar-toggler navbar-toggler-right"
@@ -17,10 +18,10 @@ const NavBar = (props) =>
       <span className="navbar-toggler-icon"></span>
     </button>
     
-    <a className="navbar-brand" href="#">
-      <Logo width={props.logoSize} height={props.logoSize} />
+    <div className="navbar-brand">
+      <Logo width={50} height={50} />
       <span className="brand-text">Mackie Drew</span>
-    </a>
+    </div>
 
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav mr-auto">
@@ -28,11 +29,18 @@ const NavBar = (props) =>
           <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Link</a>
+          <a className="nav-link" href="#">Portfolio</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="#">Timeline</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="#">Blog</a>
         </li>
       </ul>
     </div>
 
   </nav>
+  </div>
 
 export default NavBar

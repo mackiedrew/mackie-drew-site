@@ -1,20 +1,25 @@
 @import '../../palette.scss';
 
-.navbar {
+.navbar-wrap {
   background-color: $primary-color;
 
-  button:focus {
-    outline: none;
-    background-color: $primary-color-dark;
-  }
+  .navbar {
+    background-color: rgba(0, 0, 0, 0);
+    padding: 2px;
 
-  .navbar-brand {
-    svg {
-      vertical-align: middle;
+    button:focus {
+      outline: none;
+      background-color: $primary-color-dark;
     }
-    .brand-text {
-      margin-left: 20px;
+
+    .navbar-brand {
+      svg {
+        vertical-align: middle;
+      }
+      .brand-text {
+        margin-left: 20px;
+      }
     }
+    
   }
-  
 }

@@ -2,4 +2,19 @@
 
 .navbar {
   background-color: $primary-color;
+
+  button:focus {
+    outline: none;
+    background-color: $primary-color-dark;
+  }
+
+  .navbar-brand {
+    svg {
+      vertical-align: middle;
+    }
+    .brand-text {
+      margin-left: 20px;
+    }
+  }
+  
 }

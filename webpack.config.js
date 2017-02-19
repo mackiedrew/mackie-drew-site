@@ -68,19 +68,28 @@ module.exports = {
           'sass-loader',
         ],
       },
-    ],
-    loaders: [
       {
-          test: /\.scss$/,
-          loaders: ['style', 'css', 'sass']
-      }
-    ]
+        test: /\.svg$/,
+        use: [
+           'babel-loader',
+          {
+            loader: 'react-svg-loader',
+            query: {
+              svgo: {
+                plugins: [{removeTitle: true}],
+                floatPrecision: 2
+              }
+            }
+          }
+        ]
+      },
+    ],
   },
 
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     // enable HMR globally
-
+    
     new webpack.NamedModulesPlugin(),
     // prints more readable module names in the browser console on HMR updates
   ],

@@ -1,0 +1,20 @@
+@import '../../palette.scss';
+
+.portfolio {
+
+  .row {
+
+    margin: 30px 0px;
+
+    .screenshot {
+      border: 2px solid $divider-color;
+      border-radius: 4px;
+      filter: grayscale(100%);
+    }
+
+    .screenshot:hover {
+      transition: 0.4s;
+      filter: grayscale(0%);
+    }
+  }
+}

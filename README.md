@@ -1,4 +1,4 @@
-# mackie-drew-site
+# Mackie Drew's Personal Site
 My personal portfolio site built in React.
 
 Should be located at http://mackiedrew.com/
@@ -15,8 +15,6 @@ Should be located at http://mackiedrew.com/
 8. GitHub Pages
 9. Bootstrap 4
 
-# Need adding
-
 # Plan
 
   ## Design
@@ -29,7 +27,6 @@ Should be located at http://mackiedrew.com/
   - Social Buttons in a row
   - Portfolio
   - Timeline
-  - Contact
   - Copyright notice
 
   ## Behavior

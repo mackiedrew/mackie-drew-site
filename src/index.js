@@ -4,7 +4,6 @@ import ReactDOM from 'react-dom'
 import { AppContainer } from 'react-hot-loader'
 
 import App from './components/App/App'
-//import 'bootstrap/dist/js/bootstrap'
 
 const render = (Component) => {
   ReactDOM.render(
@@ -16,7 +15,6 @@ const render = (Component) => {
 }
 
 render(App)
-
 
 /* eslint-disable no-undef */
 

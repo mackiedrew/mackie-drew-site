@@ -1,28 +1,27 @@
 import React from 'react' // eslint-disable-line no-unused-vars
 import './Portfolio.scss'
+import PortfolioEntry from '../PortfolioEntry/PortfolioEntry'
 
-const PortfolioEntry = (props) => {
 
-  const {name} = props
-  const imgSrc = require('../../images/wit-screenshot.png')
-
-  return (
-    <div className="row">
-      <div className="col">
-        <img className="screenshot img-fluid" src={imgSrc} alt={name} />
-      </div>
-    </div>
-  )
-}
+// Order of posts, listed by name in the posts/ folder
+const portfolioPosts = [
+  'wit',
+  'wit',
+  'wit',
+  'wit',
+  'wit',
+]
 
 const Portfolio = () => {
 
   return (
     <div id="portfolio" className="portfolio container">
-      <PortfolioEntry name="1" />
-      <PortfolioEntry name="2" />
-      <PortfolioEntry name="3" />
-      <PortfolioEntry name="4" />
+      {portfolioPosts.map((post, i) => {
+        // Get the post data from the specified folder.
+        const json = require(`../../posts/${post}/post.json`) // eslint-disable-line no-undef
+        return (<PortfolioEntry key={`${i}-${post}`} data={json} />)
+      })}
+     
     </div>
   )
 }

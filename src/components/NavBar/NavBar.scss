@@ -8,6 +8,10 @@ nav {
     svg {
       vertical-align: middle;
     }
+
+    .logo path {
+      fill: $accent-color;
+    }
     
     .brand-text {
       color: $invert-text-color;

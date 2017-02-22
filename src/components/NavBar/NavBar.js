@@ -8,7 +8,7 @@ const NavBar = () =>
       <div className="row">
       
         <div className="brand col-md-6">
-          <Logo width={50} height={50} />
+          <Logo className="logo" width={50} height={50} />
           <span className="brand-text">Mackie Drew</span>
         </div>
 

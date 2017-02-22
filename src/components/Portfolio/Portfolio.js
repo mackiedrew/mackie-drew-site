@@ -6,10 +6,14 @@ import PortfolioEntry from '../PortfolioEntry/PortfolioEntry'
 // Order of posts, listed by name in the posts/ folder
 const portfolioPosts = [
   'wit',
-  'wit',
-  'wit',
-  'wit',
-  'wit',
+  'rue-pigalle',
+  // 'mackie',
+  // 'chelsea',
+
+  // 'rue-pigalle',
+  // 'tiko',
+  // 'valance',
+  // 'lancelot'
 ]
 
 const Portfolio = () => {

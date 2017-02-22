@@ -11,7 +11,8 @@
       "year": 2017
     }
   },
-  "name": "wit",
+  "id": "wit",
+  "name": "Tiko's Web Interface",
   "url": "http://demo.tiko3d.com",
   "description": "Ya know...",
   "tags": ["react", "redux", "frontend"]

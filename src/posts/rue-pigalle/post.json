@@ -1,0 +1,19 @@
+{
+  "date": {
+    "start": {
+      "day": 15,
+      "month": 2,
+      "year": 2017
+    },
+    "end": {
+      "day": null,
+      "month": null,
+      "year": null
+    }
+  },
+  "id": "rue-pigalle",
+  "name": "Rue Pigalle",
+  "url": "http://ruepigalle.ca/",
+  "description": "Did all sorts of stuff.",
+  "tags": ["shopify", "ecomerce", "frontend", "design"]
+}

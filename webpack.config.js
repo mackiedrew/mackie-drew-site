@@ -90,7 +90,7 @@ module.exports = {
       {
         test: /\.(png|jpg|gif)$/, 
         exclude: /node_modules/,
-        loader: 'file-loader?name=images/[name].[ext]'
+        loader: 'file-loader?name=images/[hash].[ext]'
       },
     ],
   },

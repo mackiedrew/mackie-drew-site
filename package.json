@@ -38,7 +38,6 @@
     "transform": {
       ".*": "<rootDir>/node_modules/jest-babel-preprocessor/preprocessor.js"
     },
-    "scriptPreprocessor": "<rootDir>/node_modules/jest-babel-preprocessor/preprocessor.js",
     "unmockedModulePathPatterns": [
       "<rootDir>/node_modules/react"
     ]

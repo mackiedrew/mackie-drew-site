@@ -1,5 +1,6 @@
 import React from 'react' // eslint-disable-line no-unused-vars
 import './PortfolioEntry.scss'
+import Angle from '../../images/triangle.svg'
 
 
 // This stateless functional component creates, click-able tags that can filter by tag.
@@ -12,15 +13,33 @@ const Tag = (props) =>
  * This stateless functional component describes any additional information about a post besides
  * just the screenshot.
  */
-const Description = (props) => 
-  <div className="description">
-    <div className="tags">
-      {props.tags.map((tag) => 
-        <Tag value={tag} />
-      )}
+const Info = (props) => {
+
+  const logo = require(`../../posts/${props.id}/logo.png`) // eslint-disable-line no-undef
+  
+  return (
+  <div className="info container">
+    <div className="row">
+      <div className="logo-wrap col-12 col-lg-6">
+        <img className="logo img-fluid" src={logo} alt={name} />
+      </div>
+      <div className="description col-12 col-lg-6">
+        <Angle className="triangle" />
+        <div className="text">
+          {props.description}
+        </div>
+        <div className="tags">
+          {props.tags.map((tag) => 
+            <Tag key={tag} value={tag} />
+          )}
+        </div>
+      </div>
+
+
     </div>
-    Description! {props.description}
   </div>
+  )
+}
 
 
 // This component can toggle it's state 
@@ -39,16 +58,16 @@ class PortfolioEntry extends React.Component {
   }
 
   render () {
-    const {name} = this.props.data
-    const imgSrc = require(`../../posts/${name}/screenshot.png`) // eslint-disable-line no-undef
+    const {name, id} = this.props.data
+    const imgSrc = require(`../../posts/${id}/screenshot.png`) // eslint-disable-line no-undef
 
     return (
       <div className="row portfolio-entry">
         <div className="col">
-          <img className="screenshot img-fluid" src={imgSrc} alt={name} onClick={() => this.toggle()} />
+          <img className="screenshot img-fluid box-shadow" src={imgSrc} alt={name} onClick={() => this.toggle()} />
           {
             (() => {if (this.state.expanded)
-              return <Description 
+              return <Info 
                 {...this.props.data}
               />
             })()

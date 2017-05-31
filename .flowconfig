@@ -1,0 +1,16 @@
+[ignore]
+<PROJECT_ROOT>/coverage/.*
+<PROJECT_ROOT>/build/.*
+<PROJECT_ROOT>/.*/__tests__/.*
+<PROJECT_ROOT>/.*/__mocks__/.*
+
+[include]
+
+[libs]
+
+[options]
+module.system=node
+module.name_mapper='.*\.styl$' -> '<PROJECT_ROOT>/flow/stub/styl-modules.js'
+
+[version]
+0.46.0

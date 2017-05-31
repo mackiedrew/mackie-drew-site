@@ -1,0 +1,22 @@
+{
+
+  "presets": [
+    "es2015",
+    "stage-0",
+    "react",
+    "flow"
+  ],
+
+  "plugins": [
+    "react-hot-loader/babel",
+    "syntax-dynamic-import",
+    "transform-async-to-generator"
+  ],
+
+  "env": {
+    "test": {
+      "sourceMaps": "both"
+    }
+  }
+  
+}
